@@ -9,10 +9,12 @@ namespace OnlineShop.Data.Infrastructure
     public class Disposable : IDisposable
     {
         private bool isDisposed;
+
         ~Disposable()
         {
             Dispose(false);
         }
+
         public void Dispose()
         {
             Dispose(true);
@@ -24,8 +26,13 @@ namespace OnlineShop.Data.Infrastructure
             {
                 DisposeCore();
             }
+
             isDisposed = true;
         }
-        protected virtual void DisposeCore() { }
+
+        // Ovveride this to dispose custom objects
+        protected virtual void DisposeCore()
+        {
+        }
     }
 }

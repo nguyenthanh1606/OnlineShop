@@ -6,14 +6,14 @@ namespace OnlineShop.Data.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
     public sealed partial class InitialDB : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(InitialDB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201808280935013_InitialDB"; }
+            get { return "201808290348225_InitialDB"; }
         }
         
         string IMigrationMetadata.Source

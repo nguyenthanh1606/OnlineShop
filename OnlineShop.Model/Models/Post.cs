@@ -17,16 +17,19 @@ namespace OnlineShop.Model.Models
         public string Name { set; get; }
 
         [Required]
-        [Column(TypeName = "varchar")]
         [MaxLength(256)]
+        [Column(TypeName = "varchar")]
         public string Alias { set; get; }
 
+        [Required]
         public int CategoryID { set; get; }
-        public int? DisplayOrder { set; get; }
+
         [MaxLength(256)]
         public string Image { set; get; }
+
         [MaxLength(500)]
         public string Description { set; get; }
+
         public string Content { set; get; }
 
         public bool? HomeFlag { set; get; }

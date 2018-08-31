@@ -11,7 +11,6 @@ namespace OnlineShop.Model.Models
         public int ProductID { set; get; }
 
         [Key]
-        [Required]
         [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(50)]
         public string TagID { set; get; }
