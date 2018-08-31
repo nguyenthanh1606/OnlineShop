@@ -27,7 +27,8 @@ namespace OnlineShop.Data
         public DbSet<Tag> Tags { set; get; }
         public DbSet<SystemConfig> SystemConfig { set; get; }
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
+        public DbSet<Error> Errors { set; get; }
 
-        
+
     }
 }
